@@ -2,42 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UFT-8">
-    <title> Document </title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <script type="module" src="/bundle.js"></script> -->
-    <script type="module" src="/bundle.js"></script>
+  <meta charset="UFT-8">
+  <title> Document </title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- <script type="module" src="/bundle.js"></script> -->
+  <script type="module" src="/bundle.js"></script>
 </head>
 
 <body>
-    <div id="home_div" class="main-div">
-        <h1>Hello world, Welcome to Project H</h1>
-        <button id="login-view-button">Click Here to Login</button>
-        <br>
-        <button id="signup-view-button">Click Here to Signup</button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">ProjectH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="viewRoommates/viewRoommates.html">Roommates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="viewItems/viewItems.html">Items</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="makeRoommatePost/makeRoommatePost.html">Post Roommate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="makeItemPost/">Post Item</a>
+        </li>
+    </div>
+  </nav>
+
+  <div id="home_div" class="main-div">
+    <h1>Hello world, Welcome to Project H</h1>
+    <button id="login-view-button">Click Here to Login</button>
+    <br>
+    <button id="signup-view-button">Click Here to Signup</button>
+  </div>
+
+  </div>
+  <div id="login_div" class="main-div">
+    <h3>ProjectH Login</h3>
+    <input type="email" placeholder="Email..." id="login_email_field" />
+    <input type="password" placeholder="Password..." id="login_password_field" />
+    <button id="login-button"">Login to Account</button>
     </div>
 
-    </div>
-    <div id="login_div" class="main-div">
-        <h3>ProjectH Login</h3>
-        <input type="email" placeholder="Email..." id="login_email_field" />
-        <input type="password" placeholder="Password..." id="login_password_field" />
-        <button id="login-button"">Login to Account</button>
-    </div>
-
-    <div id="signup_div" class="main-div">
-        <h3>ProjectH Login</h3>
-        <input type="email" placeholder="Email..." id="signup_email_field" />
-        <input type="password" placeholder="Password..." id="signup_password_field" />
-        <button id="signup-button"">Signup</button>
+    <div id=" signup_div" class="main-div">
+      <h3>ProjectH Login</h3>
+      <input type="email" placeholder="Email..." id="signup_email_field" />
+      <input type="password" placeholder="Password..." id="signup_password_field" />
+      <button id="signup-button"">Signup</button>
     </div>
 
-    <div id="user_div" class="loggedin-div">
+    <div id=" user_div" class="loggedin-div">
         <h3>Welcome User</h3>
         <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
         <button id="logout_button">Logout</button>
-    </div>
-    
+  </div>
+
 </body>
 
 </html>
